@@ -12,6 +12,9 @@ clean:
 
 start:
 	docker run -d --rm -p 8000:8000 --name cyberchef mpepping/cyberchef:latest
+	
+standalone:
+	docker run --rm -p 8000:8000 --name cyberchef mpepping/cyberchef:latest
 
 stop:
 	docker rm -f cyberchef
